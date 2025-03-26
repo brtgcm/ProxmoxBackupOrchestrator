@@ -59,7 +59,7 @@ def run_vzdump(node_config, config):
     elif 'exclude_vms' in config:
         exclude_list = config['exclude_vms']
     else:
-        exclude_list = []  # No exclusion
+        exclude_list = []  # No global exclusion
 
     if exclude_list:  # If there are VMs to exclude
         exclude_str = ','.join(map(str, exclude_list))
