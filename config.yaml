@@ -1,0 +1,19 @@
+nodes:
+  - fqdn: server1.example.com
+    shortname: server1
+  - fqdn: server2.example.com
+    shortname: server2
+  - fqdn: server3.example.com
+    shortname: server3
+  - fqdn: server4.example.com
+    shortname: server4
+  - fqdn: server5.example.com
+    shortname: server5
+pbs_storage: PBS_STORAGE
+mailto: mail@example.org
+bwlimit: 0
+fleecing: 0
+notes_template: '{{guestname}}'
+mailnotification: always
+schedule: "0 * * * *"
+exclude_vms: [1000, 1002, 113]
